@@ -14,7 +14,7 @@
 <meta property="og:description" content="The safety guarantees provided by transactions are often know as acronym ACID, that stands for Atomacity, Consistency, Isolation and Durabilty. It’s important to differentiate from BASE acronym which">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2021-02-02T15:39:03.000Z">
-<meta property="article:modified_time" content="2021-02-02T16:32:15.847Z">
+<meta property="article:modified_time" content="2021-02-02T16:33:20.427Z">
 <meta property="article:author" content="Abdybaev Azamat">
 <meta name="twitter:card" content="summary">
     
@@ -150,7 +150,7 @@
 <p><strong>Consistency</strong></p>
 <p>​    Atomacity, durability, isolation - properties of database, while consistency - property of application. It’s up to you to decided wether you application in consistent way or not. And you can relate to ACID properties as an ultimate truth to stay your data consistent. </p>
 <p><strong>Isolation</strong></p>
-<p>​    Databases are concurrent. It’s often happens when transactions processed concurently and if some transcation will see middle results of another transaction that could be aborted or commited we can get wrong results by condsidering not commited results. And for this case isolation make possible to run transaction like a single transcation in database at current time. It’s like sequential running of transactions, while databases uses MVCC to bring isolation between transactions. </p>
+<p>​    Databases are concurrent. It’s often happens when transactions processes concurently and if some transcation will see middle results of another transaction that could be aborted or commited we can get wrong results by condsidering not commited results. And for this case isolation make possible to run transaction like a single transcation in database at current time. It’s like sequential running of transactions, while databases uses MVCC to bring isolation between transactions. </p>
 <p><strong>Durability</strong></p>
 <p>​    This property ensures that once transcation was completed the data will be completely saved even if system crash happens. For single node database it would be a promise to write data for non volatile storage, in replicated database it could mean that the data was completely copied to all nodes. </p>
 
