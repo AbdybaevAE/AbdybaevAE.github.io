@@ -14,7 +14,7 @@
 <meta property="og:description" content="​    In this article we talk about AVL tree. ​    AVL is self-balanced tree, where for each node difference between height of left and right subtrees no more than 1.  ​    Whenever you insert a node i">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2021-02-05T20:02:44.000Z">
-<meta property="article:modified_time" content="2021-02-09T20:32:39.051Z">
+<meta property="article:modified_time" content="2021-02-09T20:38:24.127Z">
 <meta property="article:author" content="Abdybaev Azamat">
 <meta name="twitter:card" content="summary">
     
@@ -146,9 +146,9 @@
   <div class="content" itemprop="articleBody">
     <p>​    In this article we talk about <strong>AVL</strong> tree.</p>
 <p>​    AVL is self-balanced tree, where for each node difference between height of left and right subtrees no more than 1. </p>
-<p>​    Whenever you insert a node into tree, you always rebalance tree. Asymptotic complexity of  insert, search, and delete operations - logarithmic complexity and linear complexity for space complexity. Let’s define <strong>balance</strong> property of node. Balance property equals difference between height of left subtree and right subtree. If <code>|difference| &lt; 1</code>, then the node is said balanced, otherwise not balanced.</p>
-<p>​    Whenever we insert a new value into tree, we need always check on balance property. If property bigger than 1 by modulo, then rebalance tree at that node. We can get desired balance property of node by rotating node. </p>
-<p>There are 4 main rotations exists:</p>
+<p>​    Whenever you insert a node into tree, you always rebalance tree. Asymptotic complexity of  insert, search, and delete operations - logarithmic complexity and linear complexity for space complexity. Let’s define <strong>balance</strong> property of node. Balance property equals difference of height of left and right subtrees. If <code>|difference| &lt;= 1</code>, then the node is said balanced, otherwise not balanced.</p>
+<p>​    Whenever we peform insert operation, we need always check on balance property(of new value’s ancestor). If if not balanced, then rebalance tree by rotating operation.</p>
+<p>There are 4 rotations exists:</p>
 <ul>
 <li>Left rotation</li>
 <li>Right rotation</li>
